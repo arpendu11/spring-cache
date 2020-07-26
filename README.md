@@ -7,4 +7,5 @@ In order to use Redis cluster, do the following steps:
 * Go to com/practice/config/EhCacheConfig.java, disable all the annotations.
 * Go to com/practice/SpringCacheApplication.java, enable @EnableCaching annotation.
 
-
+## Explanation
+* [Caching strategies for REST API in Java using Spring Boot](https://arpendu.hashnode.dev/caching-strategies-for-rest-api-in-java-using-spring-boot-ckd2qt2np00w2scs12fs1db8a)
