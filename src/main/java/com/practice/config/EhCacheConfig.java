@@ -9,6 +9,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
+import java.util.Objects;
+
 @EnableJpaRepositories(basePackages = "com.practice.repository")
 @EnableCaching
 @Configuration
@@ -16,7 +18,7 @@ public class EhCacheConfig {
 
 	@Bean
     public CacheManager cacheManager() {
-        return new EhCacheCacheManager(cacheManagerFactory().getObject());
+        return new EhCacheCacheManager(Objects.requireNonNull(cacheManagerFactory().getObject()));
     }
 
 	@Bean
